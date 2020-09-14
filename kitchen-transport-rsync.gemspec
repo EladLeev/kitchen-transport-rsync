@@ -18,20 +18,20 @@ $:.push File.expand_path('../lib', __FILE__)
 
 Gem::Specification.new do |spec|
   spec.name = 'kitchen-transport-rsync'
-  spec.version = '0.1.3'
+  spec.version = '0.1.4'
   spec.authors = 'Ilja Bobkevic'
   spec.email = 'ilja.bobkevic@unibet.com'
   spec.description = 'Additional Test kitchen transport using rsync'
   spec.summary = spec.description
   spec.homepage = 'https://github.com/unibet/kitchen-transport-rsync'
-  spec.license = 'Apache 2'
+  spec.license = 'Apache-2.0'
 
   spec.files = `git ls-files`.split($/)
   spec.executables = []
   spec.test_files = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = %w(lib)
 
-  spec.add_dependency 'test-kitchen', '~> 2.3.3'
-  spec.add_development_dependency 'rake', '~> 10.4'
-  spec.add_development_dependency 'rspec', '~> 3.3'
+  spec.add_dependency 'test-kitchen', '~> 2.6.0'
+  spec.add_development_dependency 'rake', '~> 13.0.1'
+  spec.add_development_dependency 'rspec', '~> 3.9.0'
 end
